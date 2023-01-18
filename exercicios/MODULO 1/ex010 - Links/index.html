@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p> <!--O uso de "target" e "rel" são feitas para que abra uma nova guia. Ou seja, serve para que o usuario não sobreponha a sua página, assim ele pode voltar a ele sem fechar a outra.-->
+    <!--Quando você abrir um site que não pertence a vc, o ideal é você abrir em outra guia, deixando o seu site aberto.-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/">canal gratuito no YouTube</a></p> <!--Exemplo de um site abrindo no meu site. NÃO É O IDEAL.-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p> <!--Exemplo de um site, com o link no meu site, abrindo em uma nova guia. É O IDEAL.-->
+    <h1>Usando links internos</h1>
+    <p>
+        Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a> <!--Serve para o mecanismo de navegação descobrir qual método é usado para navegar dentro do site. No caso "rel="next"" é por causa da navegação em links internos.-->
+    </p>
+
+    <!--Com relação ao "target" usado em links internos, vc pode usar "_self", ou simplesmente não usar nada. As duas formas estão corretas.-->
+
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p> <!--Sempre use "CTRL + SPACE" é MUITO útil!-->
+
+    <h1>Links para downloads</h1>
+
+    <ul>
+        <li><a href="arquivos/meulivro.pdf" download="meulivro.pdf" type="application/pdf" target="_blank" rel="next">Baixar o livro em PDF</a></li>
+        <li><a href="arquivos/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+    <!--Conferir depois no vídeo para ver se estão certos.-->
+</body>
+</html>

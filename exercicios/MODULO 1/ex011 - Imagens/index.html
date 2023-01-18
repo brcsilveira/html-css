@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e dimínua o tamanho do seu navegador.</p>
+
+    <picture> <!--LEMBRETE IMPORTANTE: Sempre bote os "sources" acima da imagem base, como está feito logo abaixo, por exemplo. Maior sempre abaixo, menor sempre acima!-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture> <!--Esse parágrafo serve para mostrar a flexibilização que a imagem deve ter para que possa ser aberta nos mais diversos dispositivos, como por exemplo: celulares, notebooks e televisões.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HMTL5.</p>
+    <!--<audio src="midia/happy-mistake.mp3" controls autoplay></audio>--> <!--Deixei comentada essa linha pois apresentou um erro no browser, por isso vamos tentar de outra forma.-->
+    
+    <!--"controls" serve como um botão dentro do site para quando o usuário quiser iniciar a mídia. "autoplay" serve para quando o user abrir o site e iniciar a mídia automaticamente, entretanto, vai depender do navegador para essa TAG funcionar.-->
+    
+    <!-- MP3, WAV E OGG são os tipos de arquivo que GERALMENTE tem compatibilidade com todos browsers.-->
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        
+        <!--<source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">-->
+
+        <!--EVITE USAR ARQUIVOS "wav"!-->
+        
+        <!--Essas seriam as outras formas de inserir os arquivos compatíveis com os browsers, mas como não temos nenhum 
+        conversor em mãos vamos deixar essas linhas comentadas.-->
+        
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo em MP3.</a>
+        </p>
+    </audio>
+</body>
+</html>

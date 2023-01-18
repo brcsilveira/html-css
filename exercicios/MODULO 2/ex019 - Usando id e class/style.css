@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é # // (só pode um elemento)
+    em HTML é class = em CSS é . // (pode vários elementos)
+*/
+
+body {
+    background-color: #87F5A8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #417550;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #1D3625;
+    color: #79DB96;
+}
+
+h2 {
+    color: #64B57C;
+}
+
+/*  Geralmente não se usa "h2.basico" em class, e sim só
+    ".basico", pois assim podemos aproveitar a classe para reutilizar.*/
+.basico {
+    color: #3c805e;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}
+
+/* Posso aplicar mais de uma class a um elemento também!*/

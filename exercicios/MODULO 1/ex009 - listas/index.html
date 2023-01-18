@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol> <!--Significa lista ordenada, ou seja, os elementos devem estar dentro de "ol".-->
+        <li>Acordar</li> <!--ListItem, para listar cada elemento.-->
+        <li>Escovar os dentes</li>
+        <li>Rezar</li>
+        <li>Comer <!--OBS: o "</li>" a partir do HTML5 se tronou opcional, então necessariamente não precisa mais colocar ele, mas cabe dizer que o próprio VS coloca ele sozinho.-->
+    </ol>
+    
+    <ol type="A"> <!--Listagem com letras maiúsculas. Para mudar para minúsculas batar inverter o "A" pelo "a".-->
+        <li>Acordar</li>
+        <li>ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <ol type="I"> <!--Listagem com números romanos. "i" eles ficam minúsculos.-->
+        <li>Acordar</li>
+        <li>ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <ol type="1" start="4"> <!--Significa que é uma lista numerica que começa a partir de 4.-->
+        <li>Comer</li>
+        <li>lanchar</li>
+        <li>rezar</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+    <ul>
+        <li>Acordar</li>
+        <li>ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ul> <!--"ul" se refere a listas não ordenadas-->
+
+    <ul type="square"> <!--Para personalizar basta inserir o tipo dentro de "<ul>"-->
+        <li>Acordar</li>
+        <li>ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ul>
+
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--O "start" tem que ser numérico SEMPRE!-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+<!--MACETE: Segurando o ALT e clicando com o cursor do mouse, podemos trocar letras de mais uma linha ao mesmo tempo. Útil para modificar uma mesma TAG em várias linhas.-->
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevaria</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+</body>
+</html>

@@ -8,15 +8,23 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*cobrir*/
+            background-size: cover; // cobrir
+            background-attachment: fixed;
+
+            /* shorthand - background
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center no-repeat /*cover*/ fixed;
+            background-size: cover; /* Não funciona na shorthand, por isso está entre colchetes */
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +36,11 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur vel fugit cupiditate porro, nulla exercitationem excepturi totam dolore, vero, nobis est itaque dolores dignissimos repellendus quis eaque et. Magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis fugiat aliquam, aliquid numquam quasi vitae sunt dolorem vel. Dolores quasi deleniti maxime consequuntur! Dolor cumque sequi consequatur ipsa modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam quasi quod, aspernatur et quidem nostrum blanditiis est reiciendis similique, sint, tenetur natus ducimus non laudantium nam? Eius, tenetur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur vel fugit cupiditate porro, nulla exercitationem excepturi totam dolore, vero, nobis est itaque dolores dignissimos repellendus quis eaque et. Magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis fugiat aliquam, aliquid numquam quasi vitae sunt dolorem vel. Dolores quasi deleniti maxime consequuntur! Dolor cumque sequi consequatur ipsa modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam quasi quod, aspernatur et quidem nostrum blanditiis est reiciendis similique, sint, tenetur natus ducimus non laudantium nam? Eius, tenetur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur vel fugit cupiditate porro, nulla exercitationem excepturi totam dolore, vero, nobis est itaque dolores dignissimos repellendus quis eaque et. Magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis fugiat aliquam, aliquid numquam quasi vitae sunt dolorem vel. Dolores quasi deleniti maxime consequuntur! Dolor cumque sequi consequatur ipsa modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam quasi quod, aspernatur et quidem nostrum blanditiis est reiciendis similique, sint, tenetur natus ducimus non laudantium nam? Eius, tenetur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur vel fugit cupiditate porro, nulla exercitationem excepturi totam dolore, vero, nobis est itaque dolores dignissimos repellendus quis eaque et. Magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis fugiat aliquam, aliquid numquam quasi vitae sunt dolorem vel. Dolores quasi deleniti maxime consequuntur! Dolor cumque sequi consequatur ipsa modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam quasi quod, aspernatur et quidem nostrum blanditiis est reiciendis similique, sint, tenetur natus ducimus non laudantium nam? Eius, tenetur accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur vel fugit cupiditate porro, nulla exercitationem excepturi totam dolore, vero, nobis est itaque dolores dignissimos repellendus quis eaque et. Magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis fugiat aliquam, aliquid numquam quasi vitae sunt dolorem vel. Dolores quasi deleniti maxime consequuntur! Dolor cumque sequi consequatur ipsa modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam quasi quod, aspernatur et quidem nostrum blanditiis est reiciendis similique, sint, tenetur natus ducimus non laudantium nam? Eius, tenetur accusamus.</p>
+
     </main>
 </body>
 </html>

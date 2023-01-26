@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 98vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eum voluptatum voluptas iste mollitia ex, enim maxime dolores, consequatur veritatis nobis laboriosam velit sit consectetur tempora id, repellendus expedita quos.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad earum asperiores reprehenderit, nisi provident, sapiente eligendi quis hic minima debitis officia mollitia excepturi facilis voluptates suscipit ullam possimus minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error expedita facilis dignissimos inventore incidunt. Laboriosam quidem dolorum excepturi quae, sequi voluptate pariatur maxime voluptatum labore exercitationem dignissimos amet qui itaque!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima </h1>" frameborder="0">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad earum asperiores reprehenderit, nisi provident, sapiente eligendi quis hic minima debitis officia mollitia excepturi facilis voluptates suscipit ullam possimus minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error expedita facilis dignissimos inventore incidunt. Laboriosam quidem dolorum excepturi quae, sequi voluptate pariatur maxime voluptatum labore exercitationem dignissimos amet qui itaque!</p>
+</body>
+</html>
